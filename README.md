@@ -6,7 +6,10 @@
 *DOMAIN*: FULL STACK WEB DEVELOPMENT
 *DURATION*: 4 WEEKS
 *MENTOR*: NEELA SANTOSH
-## Chrome extension that tracks time spent on websites and provides comprehensive productivity analytics. Here's what the extension includes:
+
+## DESCRIPTION
+
+Chrome extension that tracks time spent on websites and provides comprehensive productivity analytics. Here's what the extension includes:
 
 Key Features:
 
@@ -37,3 +40,6 @@ Provides productivity score based on productive vs unproductive time
 
 ##OUTPUT 
 
+<img width="747" height="788" alt="Image" src="https://github.com/user-attachments/assets/7515a10f-b42e-4fcf-9859-251484672972" />
+
+<img width="1920" height="911" alt="Image" src="https://github.com/user-attachments/assets/46758235-3817-4caa-b0da-7156e14f6343" />
