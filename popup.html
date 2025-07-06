@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 350px;
+      padding: 0;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    
+    .header {
+      padding: 20px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+    
+    .header h1 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    
+    .stats {
+      padding: 20px;
+    }
+    
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 0;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      backdrop-filter: blur(5px);
+    }
+    
+    .stat-label {
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+    }
+    
+    .stat-value {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    
+    .productivity-score {
+      text-align: center;
+      margin: 20px 0;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+    }
+    
+    .score-number {
+      font-size: 36px;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+    
+    .score-label {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+    
+    .actions {
+      padding: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    
+    .icon {
+      margin-right: 8px;
+    }
+    
+    .productive { color: #4CAF50; }
+    .unproductive { color: #F44336; }
+    .neutral { color: #FF9800; }
+    
+    .loading {
+      text-align: center;
+      padding: 40px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🎯 Productivity Tracker</h1>
+  </div>
+  
+  <div id="loading" class="loading">
+    Loading your productivity data...
+  </div>
+  
+  <div id="content" style="display: none;">
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-label">
+          <span class="icon">🚀</span>
+          Productive Time
+        </div>
+        <div class="stat-value productive" id="productive-time">0m</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-label">
+          <span class="icon">📱</span>
+          Unproductive Time
+        </div>
+        <div class="stat-value unproductive" id="unproductive-time">0m</div>
+      </div>
+      
+      <div class="stat-item">
+        <div class="stat-label">
+          <span class="icon">⚡</span>
+          Other Time
+        </div>
+        <div class="stat-value neutral" id="neutral-time">0m</div>
+      </div>
+      
+      <div class="productivity-score">
+        <div class="score-number" id="productivity-score">0%</div>
+        <div class="score-label">Productivity Score</div>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <button class="btn" id="dashboard-btn">
+        📊 View Detailed Dashboard
+      </button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
